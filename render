@@ -1,0 +1,19 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.9"
+# dependencies = [
+#     "jupyterlab>=4.4.3",
+#     "jupyterlab-stata-highlight2>=0.1.2",
+#     "nbstata>=0.8.3",
+# ]
+# ///
+
+import subprocess
+
+print("Hello, from uv's Python virtual environment.")
+
+cmd0 = "python -m nbstata.install --sys-prefix"
+subprocess.call(cmd0, shell=True)
+
+cmd1 = "quarto render index.qmd"
+subprocess.call(cmd1, shell=True)
