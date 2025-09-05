@@ -11,3 +11,8 @@ Then to render the Quarto document run from zsh/bash/Git Bash shell
 ```sh
 ./render
 ```
+
+Additional information on self-contained (i.e., scripts with inline metadata) executable Python scripts
+
+* <https://pydevtools.com/handbook/how-to/how-to-write-a-self-contained-script/>
+* <https://docs.astral.sh/uv/guides/scripts/#declaring-script-dependencies>
