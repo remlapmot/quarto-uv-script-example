@@ -1,0 +1,12 @@
+---
+title: Demo Quarto document using nbstata Jupyter kernel
+format:
+  html:
+    embed-resources: true
+jupyter: nbstata
+---
+
+```{stata}
+sysuse auto
+regress price weight
+```
