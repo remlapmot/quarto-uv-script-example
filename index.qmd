@@ -10,3 +10,7 @@ jupyter: nbstata
 sysuse auto
 regress price weight
 ```
+
+```{stata}
+twoway function x^3
+```
